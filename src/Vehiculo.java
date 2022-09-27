@@ -2,9 +2,9 @@ public class Vehiculo {
 
     static int PRECIO = 12000;
     static String COLOR = "blanco";
-    static String COLORES [] = {"blanco", "negro", "rojo", "azul", "verde", "gris"};
+    static String COLORES[] = {"blanco", "negro", "rojo", "azul", "verde", "gris"};
     static String GAMA = "media";
-    static String GAMAS [] = {"alta", "media", "baja"};
+    static String GAMAS[] = {"alta", "media", "baja"};
     static int PESO = 1500;
 
     int precio;
@@ -13,7 +13,6 @@ public class Vehiculo {
     int peso;
 
     public int getPeso() {
-
         return peso;
     }
 
@@ -22,61 +21,60 @@ public class Vehiculo {
     }
 
     public String getColor() {
-
         return color;
     }
 
     public String getGama() {
-
         return gama;
     }
 
-    public String comprobarGama (String gama){
+    public String comprobarGama(String gama) {
         this.gama = gama;
-        for (int i = 0; i < 2; i++){
-            if (GAMAS[i].equals(gama)){
+        for (int i = 0; i < 2; i++) {
+            if (GAMAS[i].equals(gama)) {
                 gama.toLowerCase().equals(GAMAS[i]);
-            } else{
+            } else {
                 gama.equals(GAMA);
             }
         }
         return gama;
     }
 
-    public String comprobarColor (String color){
+    public String comprobarColor(String color) {
         this.color = color;
-        for (int i = 0; i < 2; i++){
-            if (COLORES[i].equals(color)){
+        for (int i = 0; i < 2; i++) {
+            if (COLORES[i].equals(color)) {
                 color.toLowerCase().equals(COLORES[i]);
-            } else{
+            } else {
                 color.equals(COLOR);
             }
         }
         return color;
     }
 
-    public void precioFinal(){
-        switch (gama){
+    public void precioFinal() {
+        switch (gama) {
             case "alta":
-                precio +=2000;
+                precio += 2000;
                 break;
             case "media":
                 precio += 1200;
                 break;
             case "baja":
-                precio +=600;
+                precio += 600;
                 break;
         }
-        if (peso >= 1800){
+        if (peso >= 1800) {
             precio += 1500;
         } else if (peso >= 1400 && peso < 1800) {
             precio += 1000;
         } else if (peso > 1200 && peso < 1400) {
             precio += 350;
         }
+        System.out.println("El precio total del vehiculo color " + color.toLowerCase() + " de gama " + gama.toLowerCase() + " es de: " + precio + "€");
     }
 
-    public class Coche{
+    public class Coche {
         static int POTENCIA = 110;
 
         int potencia;
@@ -85,21 +83,27 @@ public class Vehiculo {
             return potencia;
         }
 
-        public void precioFnal(){
-            if (potencia > 110){
+        public void precioFnal() {
+            if (potencia > 110) {
                 precio += 800;
             }
         }
     }
 
-    public class Furgoneta{
+    public class Furgoneta {
         static double CARGA = 6.5;
-        static boolean ISELECTRICO = false;
+        static boolean ELECTRICO = false;
 
         double carga;
-        boolean isElectrico;
+        boolean electrico;
 
+        public double getCarga() {
+            return carga;
+        }
 
+        public boolean isElectrico() {
+            return electrico;
+        }
     }
 
 
