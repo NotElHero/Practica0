@@ -1,3 +1,4 @@
+
 public class Vehiculo {
 
     static int PRECIO = 12000;
@@ -83,10 +84,11 @@ public class Vehiculo {
             return potencia;
         }
 
-        public void precioFnal() {
+        public void precioFinal() {
             if (potencia > 110) {
                 precio += 800;
             }
+            System.out.println("El precio total del vehiculo color " + color.toLowerCase() + " de gama " + gama.toLowerCase() + " es de: " + precio + "€");
         }
     }
 
@@ -103,6 +105,15 @@ public class Vehiculo {
 
         public boolean isElectrico() {
             return electrico;
+        }
+
+        public void precioFinal() {
+            if (carga > 7.5) {
+                precio += precio % 30;
+            }
+            if (electrico == true){
+                precio += 2850;
+            }
         }
     }
 
