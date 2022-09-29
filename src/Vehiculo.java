@@ -75,47 +75,4 @@ public class Vehiculo {
         System.out.println("El precio total del vehiculo color " + color.toLowerCase() + " de gama " + gama.toLowerCase() + " es de: " + precio + "€");
     }
 
-    public class Coche {
-        static int POTENCIA = 110;
-
-        int potencia;
-
-        public int getPotencia() {
-            return potencia;
-        }
-
-        public void precioFinal() {
-            if (potencia > 110) {
-                precio += 800;
-            }
-            System.out.println("El precio total del vehiculo color " + color.toLowerCase() + " de gama " + gama.toLowerCase() + " es de: " + precio + "€");
-        }
-    }
-
-    public class Furgoneta {
-        static double CARGA = 6.5;
-        static boolean ELECTRICO = false;
-
-        double carga;
-        boolean electrico;
-
-        public double getCarga() {
-            return carga;
-        }
-
-        public boolean isElectrico() {
-            return electrico;
-        }
-
-        public void precioFinal() {
-            if (carga > 7.5) {
-                precio += precio % 30;
-            }
-            if (electrico == true){
-                precio += 2850;
-            }
-        }
-    }
-
-
 }

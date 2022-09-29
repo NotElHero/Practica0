@@ -28,7 +28,13 @@ public class Main {
         Vehiculo v1 = new Vehiculo();
         Vehiculo v2 = new Vehiculo();
         Vehiculo v3 = new Vehiculo();
-        //Vehiculo c1 = new Vehiculo.Coche();
+        Coche c1 = new Coche();
+        Coche c2 = new Coche();
+        Coche c3 = new Coche();
+        Coche c4 = new Coche();
+        Furgoneta f1 = new Furgoneta();
+        Furgoneta f2 = new Furgoneta();
+        Furgoneta f3 = new Furgoneta();
 
         String vehiculos [];
     }
