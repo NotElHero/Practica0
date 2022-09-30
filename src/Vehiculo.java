@@ -72,7 +72,7 @@ public class Vehiculo {
         } else if (peso > 1200 && peso < 1400) {
             precio += 350;
         }
-        System.out.println("El precio total del vehiculo color " + color.toLowerCase() + " de gama " + gama.toLowerCase() + " es de: " + precio + "€");
+        System.out.println("El precio total del vehiculo es de: " + precio + "€");
     }
 
 }

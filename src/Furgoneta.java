@@ -20,5 +20,6 @@ public class Furgoneta extends Vehiculo{
         if (electrico == true) {
             precio += 2850;
         }
+        System.out.println("El precio total de la furgoneta es de: " + precio + "€");
     }
 }

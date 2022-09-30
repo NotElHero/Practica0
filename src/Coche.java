@@ -11,6 +11,6 @@ public class Coche extends Vehiculo {
         if (potencia > 110) {
             precio += 800;
         }
-        System.out.println("El precio total del vehiculo color " + color.toLowerCase() + " de gama " + gama.toLowerCase() + " es de: " + precio + "€");
+        System.out.println("El precio total del coche de color es de: " + precio + "€");
     }
 }
